@@ -1,2 +1,5 @@
 # Node modules
 graph-besu/node_modules/
+
+graph-node/node_modules/
+graph-node/docker/data/

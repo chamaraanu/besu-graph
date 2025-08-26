@@ -1,0 +1,31 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true,  "internalType": "string", "name": "sessionID", "type": "string" },
+      {
+        "indexed": false,
+        "internalType": "struct LoggingContract.LogSummary[]",
+        "name": "logs",
+        "type": "tuple[]",
+        "components": [
+          { "internalType": "string", "name": "userRequest", "type": "string" },
+          { "internalType": "string", "name": "response",    "type": "string" },
+          {
+            "internalType": "struct LoggingContract.ToolCall[]",
+            "name": "toolCalls",
+            "type": "tuple[]",
+            "components": [
+              { "internalType": "string", "name": "name",   "type": "string" },
+              { "internalType": "string", "name": "args",   "type": "string" },
+              { "internalType": "string", "name": "result", "type": "string" }
+            ]
+          }
+        ]
+      },
+      { "indexed": false, "internalType": "string", "name": "txHash", "type": "string" }
+    ],
+    "name": "LogsUploaded",
+    "type": "event"
+  }
+]
